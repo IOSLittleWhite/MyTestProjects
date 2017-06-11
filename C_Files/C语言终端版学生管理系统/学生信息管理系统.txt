@@ -1,0 +1,38 @@
+学生信息管理系统
+struct studentInfo
+{
+	int id;
+	char name[128];
+	int age;
+	char sex;
+	int c_score;
+	int cpp_score;
+	int oc_scpre;
+};
+
+struct StudentInfo Arr[100]={};
+int count=0;
+
+show
+1. 插入用户信息
+	scnaf("%s%d", Arr[count].age);
+	count++;
+2. 显示用户信息
+	(1)输入id,按id显示信息
+	(2)输入name，按name显示信息
+3. 显示所有用户信息
+4. 删除用户信息
+	(1)输入id,按id删除信息
+	(2)输入name，按name删除信息
+
+5. 统计
+	c-score 平均值
+	cpp-score-平均值
+	oc-score平均值
+	平均值成绩最高分
+
+input: 1-6
+switch()
+{
+
+}
