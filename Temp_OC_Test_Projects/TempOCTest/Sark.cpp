@@ -106,6 +106,10 @@ struct __AtAutoreleasePool {
 };
 
 #define __OFFSETOFIVAR__(TYPE, MEMBER) ((long long) &((TYPE *)0)->MEMBER)
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_lp_rchytqcx73j7mw_vjs7pgt840000gn_T_Sark_d475f2_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"ivar: %@",8};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_lp_rchytqcx73j7mw_vjs7pgt840000gn_T_Sark_d475f2_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"property: %@",12};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_lp_rchytqcx73j7mw_vjs7pgt840000gn_T_Sark_d475f2_mi_2 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"\346\210\221\346\235\245\350\207\252\346\234\254\347\261\273",15};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_lp_rchytqcx73j7mw_vjs7pgt840000gn_T_Sark_d475f2_mi_3 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"\346\210\221\346\235\245\350\207\252category",17};
 
 
 
@@ -95690,17 +95694,38 @@ typedef struct objc_object Sark;
 typedef struct {} _objc_exc_Sark;
 #endif
 
+extern "C" unsigned long OBJC_IVAR_$_Sark$_ivar;
+extern "C" unsigned long OBJC_IVAR_$_Sark$_property;
 struct Sark_IMPL {
 	struct NSObject_IMPL NSObject_IVARS;
+	NSString *_ivar;
+	NSString *_property;
 };
 
+
+
+
+
+// @property (nonatomic, copy) NSString *property;
+
+
+
 // - (void)speak;
+
+// + (void)testClassMethod;
+
+// - (void)testCategoryFirst;
+
+
+// - (void)log;
+
 /* @end */
 
 
 
 // @interface Sark (GayExtention)
 // - (void)burst;
+// - (void)testCategoryFirst;
 /* @end */
 
 
@@ -95711,6 +95736,28 @@ static void _I_Sark_speak(Sark * self, SEL _cmd) {
 
 }
 
+
+static void _C_Sark_testClassMethod(Class self, SEL _cmd) {
+
+}
+
+
+static void _I_Sark_log(Sark * self, SEL _cmd) {
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_lp_rchytqcx73j7mw_vjs7pgt840000gn_T_Sark_d475f2_mi_0, (*(NSString **)((char *)self + OBJC_IVAR_$_Sark$_ivar)));
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_lp_rchytqcx73j7mw_vjs7pgt840000gn_T_Sark_d475f2_mi_1, (*(NSString **)((char *)self + OBJC_IVAR_$_Sark$_property)));
+}
+
+
+static void _I_Sark_testCategoryFirst(Sark * self, SEL _cmd) {
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_lp_rchytqcx73j7mw_vjs7pgt840000gn_T_Sark_d475f2_mi_2);
+}
+
+
+
+static NSString * _I_Sark_property(Sark * self, SEL _cmd) { return (*(NSString **)((char *)self + OBJC_IVAR_$_Sark$_property)); }
+extern "C" __declspec(dllimport) void objc_setProperty (id, SEL, long, id, bool, bool);
+
+static void _I_Sark_setProperty_(Sark * self, SEL _cmd, NSString *property) { objc_setProperty (self, _cmd, __OFFSETOFIVAR__(struct Sark, _property), (id)property, 0, 1); }
 // @end
 
 
@@ -95719,6 +95766,11 @@ static void _I_Sark_speak(Sark * self, SEL _cmd) {
 
 static void _I_Sark_GayExtention_burst(Sark * self, SEL _cmd) {
 
+}
+
+
+static void _I_Sark_GayExtention_testCategoryFirst(Sark * self, SEL _cmd) {
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_lp_rchytqcx73j7mw_vjs7pgt840000gn_T_Sark_d475f2_mi_3);
 }
 
 // @end
@@ -95791,14 +95843,52 @@ struct _category_t {
 extern "C" __declspec(dllimport) struct objc_cache _objc_empty_cache;
 #pragma warning(disable:4273)
 
+extern "C" unsigned long int OBJC_IVAR_$_Sark$_ivar __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Sark, _ivar);
+extern "C" unsigned long int OBJC_IVAR_$_Sark$_property __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Sark, _property);
+
+static struct /*_ivar_list_t*/ {
+	unsigned int entsize;  // sizeof(struct _prop_t)
+	unsigned int count;
+	struct _ivar_t ivar_list[2];
+} _OBJC_$_INSTANCE_VARIABLES_Sark __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+	sizeof(_ivar_t),
+	2,
+	{{(unsigned long int *)&OBJC_IVAR_$_Sark$_ivar, "_ivar", "@\"NSString\"", 3, 8},
+	 {(unsigned long int *)&OBJC_IVAR_$_Sark$_property, "_property", "@\"NSString\"", 3, 8}}
+};
+
+static struct /*_method_list_t*/ {
+	unsigned int entsize;  // sizeof(struct _objc_method)
+	unsigned int method_count;
+	struct _objc_method method_list[5];
+} _OBJC_$_INSTANCE_METHODS_Sark __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+	sizeof(_objc_method),
+	5,
+	{{(struct objc_selector *)"speak", "v16@0:8", (void *)_I_Sark_speak},
+	{(struct objc_selector *)"log", "v16@0:8", (void *)_I_Sark_log},
+	{(struct objc_selector *)"testCategoryFirst", "v16@0:8", (void *)_I_Sark_testCategoryFirst},
+	{(struct objc_selector *)"property", "@16@0:8", (void *)_I_Sark_property},
+	{(struct objc_selector *)"setProperty:", "v24@0:8@16", (void *)_I_Sark_setProperty_}}
+};
+
 static struct /*_method_list_t*/ {
 	unsigned int entsize;  // sizeof(struct _objc_method)
 	unsigned int method_count;
 	struct _objc_method method_list[1];
-} _OBJC_$_INSTANCE_METHODS_Sark __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+} _OBJC_$_CLASS_METHODS_Sark __attribute__ ((used, section ("__DATA,__objc_const"))) = {
 	sizeof(_objc_method),
 	1,
-	{{(struct objc_selector *)"speak", "v16@0:8", (void *)_I_Sark_speak}}
+	{{(struct objc_selector *)"testClassMethod", "v16@0:8", (void *)_C_Sark_testClassMethod}}
+};
+
+static struct /*_prop_list_t*/ {
+	unsigned int entsize;  // sizeof(struct _prop_t)
+	unsigned int count_of_properties;
+	struct _prop_t prop_list[1];
+} _OBJC_$_PROP_LIST_Sark __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+	sizeof(_prop_t),
+	1,
+	{{"property","T@\"NSString\",C,N,V_property"}}
 };
 
 static struct _class_ro_t _OBJC_METACLASS_RO_$_Sark __attribute__ ((used, section ("__DATA,__objc_const"))) = {
@@ -95806,7 +95896,7 @@ static struct _class_ro_t _OBJC_METACLASS_RO_$_Sark __attribute__ ((used, sectio
 	(unsigned int)0, 
 	0, 
 	"Sark",
-	0, 
+	(const struct _method_list_t *)&_OBJC_$_CLASS_METHODS_Sark,
 	0, 
 	0, 
 	0, 
@@ -95814,15 +95904,15 @@ static struct _class_ro_t _OBJC_METACLASS_RO_$_Sark __attribute__ ((used, sectio
 };
 
 static struct _class_ro_t _OBJC_CLASS_RO_$_Sark __attribute__ ((used, section ("__DATA,__objc_const"))) = {
-	0, sizeof(struct Sark_IMPL), sizeof(struct Sark_IMPL), 
+	0, __OFFSETOFIVAR__(struct Sark, _ivar), sizeof(struct Sark_IMPL), 
 	(unsigned int)0, 
 	0, 
 	"Sark",
 	(const struct _method_list_t *)&_OBJC_$_INSTANCE_METHODS_Sark,
 	0, 
+	(const struct _ivar_list_t *)&_OBJC_$_INSTANCE_VARIABLES_Sark,
 	0, 
-	0, 
-	0, 
+	(const struct _prop_list_t *)&_OBJC_$_PROP_LIST_Sark,
 };
 
 extern "C" __declspec(dllimport) struct _class_t OBJC_METACLASS_$_NSObject;
@@ -95860,11 +95950,12 @@ __declspec(allocate(".objc_inithooks$B")) static void *OBJC_CLASS_SETUP[] = {
 static struct /*_method_list_t*/ {
 	unsigned int entsize;  // sizeof(struct _objc_method)
 	unsigned int method_count;
-	struct _objc_method method_list[1];
+	struct _objc_method method_list[2];
 } _OBJC_$_CATEGORY_INSTANCE_METHODS_Sark_$_GayExtention __attribute__ ((used, section ("__DATA,__objc_const"))) = {
 	sizeof(_objc_method),
-	1,
-	{{(struct objc_selector *)"burst", "v16@0:8", (void *)_I_Sark_GayExtention_burst}}
+	2,
+	{{(struct objc_selector *)"burst", "v16@0:8", (void *)_I_Sark_GayExtention_burst},
+	{(struct objc_selector *)"testCategoryFirst", "v16@0:8", (void *)_I_Sark_GayExtention_testCategoryFirst}}
 };
 
 extern "C" __declspec(dllexport) struct _class_t OBJC_CLASS_$_Sark;

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113E22FC1EEE769F00A66F32 /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E22FB1EEE74E800A66F32 /* NSObject+DLIntrospection.m */; };
 		116331A91EEA6AC50070B300 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 116331A81EEA6AC50070B300 /* main.m */; };
-		119860211EED327E005407F4 /* Sark.m in Sources */ = {isa = PBXBuildFile; fileRef = 119860201EED327E005407F4 /* Sark.m */; };
+		119860211EED327E005407F4 /* HMTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 119860201EED327E005407F4 /* HMTestClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		113E22FA1EEE74E800A66F32 /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
+		113E22FB1EEE74E800A66F32 /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
 		116331A51EEA6AC50070B300 /* TempOCTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TempOCTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		116331A81EEA6AC50070B300 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1198601F1EED327E005407F4 /* Sark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sark.h; sourceTree = "<group>"; };
-		119860201EED327E005407F4 /* Sark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sark.m; sourceTree = "<group>"; };
+		1198601F1EED327E005407F4 /* HMTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTestClass.h; sourceTree = "<group>"; };
+		119860201EED327E005407F4 /* HMTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTestClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113E22F91EEE74E800A66F32 /* DLIntrospection */ = {
+			isa = PBXGroup;
+			children = (
+				113E22FA1EEE74E800A66F32 /* NSObject+DLIntrospection.h */,
+				113E22FB1EEE74E800A66F32 /* NSObject+DLIntrospection.m */,
+			);
+			path = DLIntrospection;
+			sourceTree = "<group>";
+		};
 		1163319C1EEA6AC50070B300 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +72,9 @@
 		116331A71EEA6AC50070B300 /* TempOCTest */ = {
 			isa = PBXGroup;
 			children = (
-				1198601F1EED327E005407F4 /* Sark.h */,
-				119860201EED327E005407F4 /* Sark.m */,
+				113E22F91EEE74E800A66F32 /* DLIntrospection */,
+				1198601F1EED327E005407F4 /* HMTestClass.h */,
+				119860201EED327E005407F4 /* HMTestClass.m */,
 				116331A81EEA6AC50070B300 /* main.m */,
 			);
 			path = TempOCTest;
@@ -124,7 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				119860211EED327E005407F4 /* Sark.m in Sources */,
+				113E22FC1EEE769F00A66F32 /* NSObject+DLIntrospection.m in Sources */,
+				119860211EED327E005407F4 /* HMTestClass.m in Sources */,
 				116331A91EEA6AC50070B300 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

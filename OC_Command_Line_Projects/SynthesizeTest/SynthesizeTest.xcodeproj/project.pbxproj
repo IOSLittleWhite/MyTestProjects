@@ -93,6 +93,7 @@
 		11B1CC541EE6E8DA00CF9C5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HM;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = JZ_Stone;
 				TargetAttributes = {
@@ -254,6 +255,7 @@
 				11B1CC651EE6E8DA00CF9C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
