@@ -27,6 +27,7 @@
 /* Begin PBXFileReference section */
 		113E22FA1EEE74E800A66F32 /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
 		113E22FB1EEE74E800A66F32 /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
+		113F7A191EF2C4AC00667D1E /* HMTestClass_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTestClass_Extension.h; sourceTree = "<group>"; };
 		116331A51EEA6AC50070B300 /* TempOCTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TempOCTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		116331A81EEA6AC50070B300 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1198601F1EED327E005407F4 /* HMTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTestClass.h; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 				113E22F91EEE74E800A66F32 /* DLIntrospection */,
 				1198601F1EED327E005407F4 /* HMTestClass.h */,
 				119860201EED327E005407F4 /* HMTestClass.m */,
+				113F7A191EF2C4AC00667D1E /* HMTestClass_Extension.h */,
 				116331A81EEA6AC50070B300 /* main.m */,
 			);
 			path = TempOCTest;

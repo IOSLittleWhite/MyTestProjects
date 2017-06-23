@@ -28,6 +28,7 @@
     sark.name = @"萨萨萨";
     [sark removeObserver:self forKeyPath:@"name"];
     // breakpoint 3
+//    NSURLConnection *connection = [NSConnection ]
 }
 
 

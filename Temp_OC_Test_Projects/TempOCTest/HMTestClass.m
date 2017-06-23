@@ -7,6 +7,7 @@
 //
 
 #import "HMTestClass.h"
+#import "HMTestClass_Extension.h"
 
 @interface HMTestClass ()
 
@@ -47,6 +48,12 @@ NSString *_ivarWhole; // 实例变量，在iOS开发中也叫成员变量
 - (void)testCategoryFirst
 {
     NSLog(@"我来自本类");
+}
+
+- (void)testExtension
+{
+    self.extension = @"extension";
+    NSLog(@"extension: %@ ", self.extension);
 }
 
 //- (NSString *)ivar
